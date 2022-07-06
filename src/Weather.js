@@ -45,6 +45,8 @@ export default function Weather() {
     </form>
   );
 
+    const githubLink = "https://github.com/erofili1/react-new-weather";
+
   if (loaded) {
     return (
       <div>
@@ -61,7 +63,7 @@ export default function Weather() {
             <img src={weather.icon} alt={weather.description} />
           </li>
         </ul>
-        <p><a href="https://github.com/erofili1/react-weather-app">Open source code</a> by Erofili Pateraki</p>
+        <p><a href={githubLink}>Open source code</a> by Erofili Pateraki</p>
       </div>
     );
   }
@@ -69,7 +71,7 @@ export default function Weather() {
   return (
     <div>
       {form}
-      <p><a href="https://github.com/erofili1/react-weather-app">Open source code</a> by Erofili Pateraki</p>
+      <p><a href={githubLink}>Open source code</a> by Erofili Pateraki</p>
 
     </div>
     );
